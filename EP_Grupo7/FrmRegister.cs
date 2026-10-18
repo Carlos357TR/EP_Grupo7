@@ -12,7 +12,7 @@ namespace EP_Grupo7
 {
     public partial class FrmRegister : Form
     {
-        private string rutaArchivo = "datos_usuarios_registrados.txt";
+        private string rutaArchivo = "datos_usuarios_registrados.txt"; 
         public FrmRegister()
         {
             InitializeComponent();
