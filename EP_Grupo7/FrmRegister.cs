@@ -18,6 +18,24 @@ namespace EP_Grupo7
             InitializeComponent();
         }
 
+        private bool ValidarNombre()
+        {
+            if (string.IsNullOrWhiteSpace(txtNombre.Text))
+                return false;
+
+            string patron = @"^[A-Z][a-z]+$";
+            return Regex.IsMatch(txtNombre.Text, patron);
+        }
+
+        private bool ValidarApellido()
+        {
+            if (string.IsNullOrWhiteSpace(txtApellido.Text))
+                return false;
+
+            string patron = @"^[A-Z][a-z]+$";
+            return Regex.IsMatch(txtApellido.Text, patron);
+        }
+
         private bool ValidarDNI()
         {
             if (string.IsNullOrWhiteSpace(txtDNI.Text))
@@ -95,6 +113,24 @@ namespace EP_Grupo7
             {
                 MessageBox.Show("Las contraseñas no coinciden.", "Error", 
                                 MessageBoxButtons.OK, 
+                                MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (!ValidarNombre())
+            {
+                MessageBox.Show("El nombre debe iniciar con mayúscula, tener minúsculas y no incluir símbolos.",
+                                "Nombre Inválido",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (!ValidarApellido())
+            {
+                MessageBox.Show("El apellido debe iniciar con mayúscula, tener minúsculas y no incluir símbolos.",
+                                "Apellido Inválido",
+                                MessageBoxButtons.OK,
                                 MessageBoxIcon.Warning);
                 return;
             }

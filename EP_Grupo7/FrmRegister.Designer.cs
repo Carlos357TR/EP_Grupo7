@@ -200,9 +200,9 @@
             lblApellido.ForeColor = SystemColors.ControlText;
             lblApellido.Location = new Point(10, 95);
             lblApellido.Name = "lblApellido";
-            lblApellido.Size = new Size(77, 21);
+            lblApellido.Size = new Size(70, 21);
             lblApellido.TabIndex = 21;
-            lblApellido.Text = "Apellidos:";
+            lblApellido.Text = "Apellido:";
             // 
             // lblNombre
             // 
@@ -211,9 +211,9 @@
             lblNombre.ForeColor = SystemColors.ControlText;
             lblNombre.Location = new Point(10, 58);
             lblNombre.Name = "lblNombre";
-            lblNombre.Size = new Size(78, 21);
+            lblNombre.Size = new Size(71, 21);
             lblNombre.TabIndex = 20;
-            lblNombre.Text = "Nombres:";
+            lblNombre.Text = "Nombre:";
             // 
             // lblTitulo
             // 

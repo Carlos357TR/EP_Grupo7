@@ -72,8 +72,8 @@ namespace EP_Grupo7
                                                              MessageBoxButtons.OK,
                                                              MessageBoxIcon.Information);
 
-                    FrmVerRegistros frmVer = new FrmVerRegistros();
-                    frmVer.Show();
+                    FrmRegistroReserva frmRegistroReserva = new FrmRegistroReserva();
+                    frmRegistroReserva.Show();
 
                     this.Hide();
                 }
