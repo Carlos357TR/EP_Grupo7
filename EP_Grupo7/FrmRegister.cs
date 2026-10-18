@@ -36,6 +36,15 @@ namespace EP_Grupo7
             return Regex.IsMatch(txtNumeroTelefonico.Text, patron);
         }
 
+        private bool ValidarCorreo()
+        {
+            if (string.IsNullOrWhiteSpace(txtCorreoElectronico.Text))
+                return false;
+
+            string patron = @"^[a-zA-Z0-9._%+-]+@gmail\.com$";
+            return Regex.IsMatch(txtCorreoElectronico.Text.Trim(), patron);
+        }
+
         private bool ValidarNombreUsuario()
         {
             if (string.IsNullOrWhiteSpace(txtNombreUsuario.Text))
@@ -108,6 +117,15 @@ namespace EP_Grupo7
                 return;
             }
 
+            if (!ValidarCorreo())
+            {
+                MessageBox.Show("El correo electrónico debe ser una cuenta válida de gmail.",
+                                 "Correo Inválido",
+                                 MessageBoxButtons.OK,
+                                 MessageBoxIcon.Warning);
+                return;
+            }
+
             if (!ValidarNombreUsuario())
             {
                 MessageBox.Show("El nombre de usuario debe iniciar con mayúscula, tener minúsculas y no incluir símbolos.", 
@@ -131,7 +149,7 @@ namespace EP_Grupo7
     
             File.AppendAllText(rutaArchivo, nuevaLinea + Environment.NewLine);
 
-            MessageBox.Show("¡Datos guardados con éxito!", "Registro Completo",
+            MessageBox.Show("Datos guardados con éxito", "Registro Completo",
                             MessageBoxButtons.OK,
                             MessageBoxIcon.Information);
             }

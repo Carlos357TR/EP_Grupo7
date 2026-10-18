@@ -102,9 +102,9 @@
             lblCantidadHuesped.Font = new Font("Segoe UI", 12F);
             lblCantidadHuesped.Location = new Point(9, 127);
             lblCantidadHuesped.Name = "lblCantidadHuesped";
-            lblCantidadHuesped.Size = new Size(176, 21);
+            lblCantidadHuesped.Size = new Size(214, 21);
             lblCantidadHuesped.TabIndex = 16;
-            lblCantidadHuesped.Text = "Cantidad de Huéspedes:";
+            lblCantidadHuesped.Text = "Cantidad de Huéspedes (0-5):";
             // 
             // lblTipoHabitacion
             // 
@@ -131,9 +131,9 @@
             lblDiaEstadia.Font = new Font("Segoe UI", 12F);
             lblDiaEstadia.Location = new Point(9, 56);
             lblDiaEstadia.Name = "lblDiaEstadia";
-            lblDiaEstadia.Size = new Size(117, 21);
+            lblDiaEstadia.Size = new Size(155, 21);
             lblDiaEstadia.TabIndex = 13;
-            lblDiaEstadia.Text = "Días de Estadía:";
+            lblDiaEstadia.Text = "Días de Estadía (0-7):";
             // 
             // lblTitulo
             // 
@@ -158,9 +158,9 @@
             lblNumHabitacion.Font = new Font("Segoe UI", 12F);
             lblNumHabitacion.Location = new Point(9, 160);
             lblNumHabitacion.Name = "lblNumHabitacion";
-            lblNumHabitacion.Size = new Size(168, 21);
+            lblNumHabitacion.Size = new Size(215, 21);
             lblNumHabitacion.TabIndex = 26;
-            lblNumHabitacion.Text = "Número de habitación:";
+            lblNumHabitacion.Text = "Número de habitación (0-50):";
             // 
             // FrmRegistroReserva
             // 
